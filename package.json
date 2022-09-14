@@ -1,13 +1,14 @@
 {
-  "name": "erral.zcml-language-configuration",
+  "name": "erral-zcmlLanguageConfiguration",
   "displayName": "ZCML language configuration",
   "description": "ZCML is an XML dialect used to configure Zope Applications",
   "version": "1.0.0",
   "license": "MIT",
   "publisher": "erral",
   "engines": {
-    "vscode": "^1.28.0"
+    "vscode": "^1.71.0"
   },
+  "repository": "https://github.com/erral/erral.zcmlLanguageConfiguration",
   "categories": [
     "Programming Languages",
     "Formatters"
@@ -50,7 +51,7 @@
   },
   "main": "./out/extension.js",
   "activationEvents": [
-    "*"
+    "onStartupFinished"
   ],
   "scripts": {
     "vscode:prepublish": "yarn run compile",
@@ -64,7 +65,7 @@
     "@types/glob": "^7.1.4",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.11.0",
-    "@types/vscode": "^1.45.0",
+    "@types/vscode": "^1.71.0",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",
