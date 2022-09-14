@@ -1,21 +1,13 @@
-# Language Configuration Sample
+# ZCML Language Configuration and Formatter for VSCode
 
-This is the source code for the [Language Configuration Guide](https://code.visualstudio.com/api/language-extensions/language-configuration-guide). This sample controls the following [Declarative Language Features](https://code.visualstudio.com/api/language-extensions/overview#declarative-language-support) for JavaScript:
+ZCML is an XML extension used by Zope applications to configure themselves. Its used extensively in [Plone](https://plone.org).
 
-- Comment toggling
-- Brackets definition
-- Autoclosing
-- Autosurrounding
-- Folding
-- Word pattern
-- Indentation Rules
+But formatting ZCML is hard in VSCode, and I have never been satisfied by existing formatters. To solve that [Alessandro Pisa](https://github.com/ale-rt) created [zpretty](https://github.com/collective/zpretty/) a _very opinionated_ ZCML formatter.
 
-## VS Code API
+This extension integrates zpretty into VSCode to format your ZCMLs.
 
-### Contribution Points
+The code of this addon is based on [VSCode Custom Local Formatters](https://github.com/jkillian/vscode-custom-local-formatters), I have also extracted the XML language definition and grammar from VSCode itself and use them to create the ZCML language in VSCode.
 
-- [`contributes.languages`](https://code.visualstudio.com/api/references/contribution-points#contributes.languages)
+The extension provides to configuration settings (with sane defaults), to provide the absolute path of your zpretty executable and the options passed to it.
 
-## Running the Sample
-
-- Run the `Run Extension` target in the Debug View
+If you have any questions or want to provide some feedback, add a [GitHub Issue](https://github.com/erral/erral.zcml-language-configuration/issues)
