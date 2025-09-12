@@ -1,3 +1,9 @@
+# DEPRECATION WARNING
+
+THIS EXTENSION IS DEPRECATED
+
+Please, uninstall this extension and install the community-supported [plone-vs-utilities](https://marketplace.visualstudio.com/items?itemName=Plone.plone-vs-utilities) extension.
+
 # ZCML Language Configuration and Formatter for VSCode
 
 ZCML is an XML extension used by Zope applications to configure themselves. Its used extensively in [Plone](https://plone.org).
